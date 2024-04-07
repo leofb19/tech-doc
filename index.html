@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Basics</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>HTML Basics</header>
+        <ul>
+          <li><a class="nav-link" href="#getting_started">Getting Started</a></li>
+          <li><a class="nav-link" href="#basics">Basics</a></li>
+          <li><a class="nav-link" href="#lists">Lists</a></li>
+          <li><a class="nav-link" href="#images">Images</a></li>
+          <li><a class="nav-link" href="#forms">Forms</a></li>
+          <li><a class="nav-link" href="#tables">Tables</a></li>
+          <li><a class="nav-link" href="#links_and_iframes">Links and iFrames</a></li>
+          <li><a class="nav-link" href="#references">References</a></li>
+        </ul>
+        <footer id="foot">
+          <p>Created by:</p>
+          <a href="https://linktr.ee/leo___19" target="_blank">Leonhardt Arnd Fischer-Buder</a>
+        </footer>
+      </nav> 
+      <div class="container">
+        <section id="getting_started" class="main-section">
+          <header>Getting Started</header>
+          <p class="desc-text">HTML stands for <span class="bold">HyperText Markup Language</span>. It is the standard language used to create documents designed for web browser usage and display. It includes useful formats and presets that allow easy modification and creation of well-written and formatted documents. These include something as simple as dotted lists, to embedded videos within a website. HTML is a versatile and useful language that serves as the foundation for web development and maintenance.</p>
+          <p class="desc-text">There have been several versions of HTML, starting with basic and evolving into a more complex and versatile language. The currently accepted and used version of HTML globally is HTML5. It included upgrades to and compatibility for:</p>
+          <ul>
+            <li>Audio and video support</li>
+            <li>Canvas elements</li>
+            <li>Form enhancements and customization</li>
+          </ul>
+          <p class="desc-text">HTML is used on every website as the barebone format and markup. It is then <span class="bold">styled with CSS</span> and made <span class="bold">interactive and useful with JavaScript</span>. Now that you have learnt the basic information surrounding HTML, let's begin with the more detailed information.</p>
+          <p class="desc-text note">IMPORTANT NOTE: THE CODE IN THIS DOCUMENT INCLUDES SPACES BETWEEN CHARACTERS FOR READABILITY. IF YOU ARE CODING WITH HTML, OMIT THE SPACES!</p>
+        </section>
+        <section id="basics" class="main-section">
+          <header>Basics</header>
+          <p class="desc-text">HTML uses <span class="bold">elements/tags and attributes</span> to tell the browser what to do with a certain lines of code, and how to display text and visuals. There are many of them, but for basic text display and formatting, the following are most widely used:</p>
+          <code>< h1 >< /h1 >
+            < h2 >< /h2 >
+            < h3 >< /h3 >
+          </code>
+          <p class="desc-text">are used to create different headings. There are a total 6 types: <span class="bold">h1 through h6</span>. 1 is the largest, and 6 the smallest. They are helpful to make the beginning of a section of your document more obvious and important.</p>
+          <code>< p >< /p ></code>
+          <p class="desc-text">is used to create a paragraph, the most basic form of text. It automatically creates a new line everytime the tag is used for text.</p>
+          <code>< span >< /span ></code>
+          <p class="desc-text">is used to either create basic text that can then have format applied to it, or to wrap a sentence or few words within another element to apply format. Unlike the <span class="bold">p element</span>, it does not create a new line at the end.</p>
+          <code>< strong >< /strong ></code>
+          <p class="desc-text">makes text <strong>bold</strong>.</p>
+          <code>< em >< /em ></code>
+          <p class="desc-text">makes text <em>italic</em>.</p>
+          <code>< sup >< /sup > and < sub >< /sub ></code>
+          <p class="desc-text">make text <sup>super-</sup> and <sub>sub-</sub> scripted respectively.</p>
+          <code>< del >< /del ></code>
+          <p class="desc-text">makes text have a <del>strike through</del>.</p>
+        </section>
+        <section id="lists" class="main-section">
+          <header>Lists</header>
+          <p class="desc-text">The next useful element of HTML is the <span class="bold">list element</span>. As its name suggests, this element is used to create a list. However, there are two different types of lists that share similar <span class="bold">syntax</span>.</p>
+          <code>< ul >
+              < li >< /li >
+              < li >< /li >
+            < /ul >
+          </code>
+          <p class="desc-text">This syntax creates what is known as an <span class="bold">unordered list</span>. This list has <span class="bold">no order</span>, meaning it will display with bullet points by default.</p>
+          <ul>
+            <li>ul Example 1</li>
+            <li>ul Example 2</li>
+          </ul>
+          <code>< ol >
+            < li >< /li >
+            < li >< /li >
+          < /ol ></code>
+          <p class="desc-text">This syntax creates what is known as an <span class="bold">ordered list</span>. Compared to an unordered list, this list has <span class="bold">order</span>, meaning it will display the <span class="bold">list items</span> with numbers by default, in the order that they follow within the code.</p>
+          <ol>
+            <li>ol Example 1</li>
+            <li>ol Example 2</li>
+          </ol>
+          <code>< ol >
+            < li >< /li >
+            < ul >
+                < li >< /li >
+                    < ul >
+                        < li >< /li >
+                    < /ul >
+            < /ul >
+            < li >< /li >
+            < ul >
+                < li >< /li >
+                < ul >
+                    < li >< /li >
+                < /ul >
+            < /ul >
+        < /ol >
+      </code>
+      <p class="desc-text">Althought that looks extremely messy and complicated, that is the basic method of including <span class="bold">a list within a list</span>. Try and follow the opening and closing tags in order to see if it makes sense why that section of code creates the following output.</p>
+      <ol>
+        <li>First List Example 1</li>
+          <ul>
+              <li>Second List Example 1</li>
+                  <ul>
+                      <li>Third List Example 1</li>
+                  </ul>
+          </ul>
+        <li>First List Example 2</li>
+          <ul>
+              <li>Second List Example 2</li>
+              <ul>
+                  <li>Third List Example 2</li>
+              </ul>
+          </ul>
+    </ol>
+        </section>
+        <section id="images" class="main-section">
+          <header>Images</header>
+          <p class="desc-text">Images are used throughout websites for several reasons. They:</p>
+          <ul>
+            <li>Provide character and style to a website</li>
+            <li>Convey visual data or examples</li>
+            <li>Add color and depth to certain sections to draw attention</li>
+          </ul>
+          <p class="desc-text">Adding images to your document is extremely easy with HTML.</p>
+          <code>< img src="" alt="" ></code>
+          <p class="desc-text">This is all you need to be able to add an image to your website. The <span class="bold">src=""</span> attribute is where you input the source of the image. This needs to be a valid source, and must be accessible on some online platform so that all users can load it. The <span class="bold">alt=""</span> attribute is where you can enter a text alternative to be displayed if a user cannot load the image. It is considered a <span class="bold">best practice</span> to include an alt for every image, and make it a detailed description of the image for users who cannot see it.</p>
+          <code>< img src="" alt="" width="" height=""></code>
+          <p class="desc-text">Including the <span class="bold">width="" and height=""</span> attributes allows you to edit the size of the image and make it smaller or bigger.</p>
+          <img src="data:image/png;base64,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" alt="A screenshot of some basic HTML">
+          <p class="desc-text">Notice how the image tag doesn't have a second closing one? That is because the image tag is what we call a <span class="bold">self-closing tag</span>.</p>
+        </section>
+        <section id="forms" class="main-section">
+          <header>Forms</header>
+          <p class="desc-text">Forms in HTML include arguably the most elements and posibilities. Each element within a form can have specific rules and conditions, making them perfect for things like sign-up pages and, well, forms. <em>Unironically</em>.</p>
+          <p class="desc-text">The basic syntax for a form element is as follows:</p>
+          <code>< input type="" ></code>
+          <p class="desc-text">The input tag is also self-closing, meaning that this is all you need to create a form element. As the name suggest, this element allows a user to input something. The <span class="bold">type=""</span> selector is where you can determine what <em>type</em> of information you wish the user to enter. HTML 5 uses this information to then also validate the input to see if it matches what you want. There are several types which each do exactly what you'd think, as well as providing neat little features. They include:</p>
+          <ul>
+            <li>text <span class="bold">(creates a simple box for a user to enter text e.g. a name)</span></li>
+            <li>password <span class="bold">(hides the user's input by replacing each character with a &#183)</span></li>
+            <li>email <span class="bold">(validates whether the user includes an @ symbol as well as a valid email domain)</span></li>
+            <li>age <span class="bold">(can be given an age limit to only allow a user within a certain age group/range to submit the information)</span></li>
+            <li>checkbox <span class="bold">(creates a checkbox that can be checked and unchecked)</span></li>
+            <li>radio</li>
+          </ul>
+          <p class="desc-text">Everything is quite straightforward other than radio. A radio is similar to a checkbox, except that it cannot be unchecked once checked. Its main purpose is to be related with a <span class="bold">name=""</span> attritbute. When linked together, it creates a list of options that a user must choose from. To do this, put them in a list and tie them together as follows:</p>
+          <code>< input type="radio" name="radio" ></code>
+          <p class="desc-text">By using this same line of code a few times, you can very easily create a list of linked radio buttons as below. Try clicking on one and then clicking on a different one to see the default behavior in action!</p>
+          <ul id="rad-list">
+            <li><input type="radio" name="radio">Example 1</li>
+            <li><input type="radio" name="radio">Example 2</li>
+            <li><input type="radio" name="radio">Example 3</li>
+          </ul>
+          <p class="desc-text">There are a few other useful attributes that you can add to an input type to make the HTML have stronger validation behavior and cleaner, more user-friendly format. These are:</p>
+          <code>< input type="" name="" value="" placeholder="" required checked ></code>
+          <p class="desc-text"><span class="bold">Required</span> creates a rule that the input must have a valid entry otherwise the form will not be submittable. The <span class="bold">checked</span> attribute is useful for checkboxes and radio buttons. It does as the name suggests, and applies a "checked state" to the input, making it mandatory for the user to select an option, otherwise the form will submit with the default checked option. The <span class="bold">placeholder</span> attribute allows you to enter a piece of text that will display if the user hasn't entered anything yet. This is helpful to provide information on what type of information should be entered, and can even include examples.</p>
+          <p class="desc-text">Buttons, textareas, and drop-down menus are also useful elements of a form. Each has it's own type, and have their own default behavior.</p>
+          <code>< input type="submit" value="" ></code>
+          <p class="desc-text">The <span class="bold">submit</span> input type is a button with pre-programmed behavior to submit a form, and displays the word "Submit" in it by default. Giving it a custom value attribute will change the default word that is displayed, and it can be changed to anything.</p>
+          <code>< input type="button" value="" ></code>
+          <p class="desc-text">The <span class="bold">button</span> input type creates an empty button with no pre-programmed behavior. It is useful to create a fully custom button with JavaScript, but in a normal HTML/CSS sense, it is dificult to use and a submit type input is more useful.</p>
+          <code>< textarea placeholder="" >< /textarea ></code>
+          <p class="desc-text">The <span class="bold">textarea</span> is not necessarily an input type, and has it's own syntax, needing both opening and closing tags. It is useful if you want the user to input a larger description in a customer support scenario, for example.</p>
+          <code>< select required >
+            < option disabled >< /option >
+            < option >< /option >
+            < /select ></code>
+          <p class="desc-text">The <span class="bold">select</span> element also has it's own syntax, and functions just like an HTML list, replacing list-items with <span class="bold">options</span>. Adding the <span class="bold">disables</span> attribute to an option will make it unselectable, and is useful to act as a placeholder.</p>
+        </section>
+        <section id="tables" class="main-section">
+          <header>Tables</header>
+          <p class="desc-text">When displaying data, there are a two main methods that are clearly the best:</p>
+          <ul>
+            <li>Visual (images or videos)</li>
+            <li>Tables</li>
+          </ul>
+          <p class="desc-text">We already covered adding an image to your website, and adding videos will be covered next. But tables have, since their creation, been the most common and applicable method to display and organize collected data of any kind. Therefore, knowing how to create one is pivotal if you wish to create a clean and dense display of your data. The syntax takes ideas from an HTMl list, but has a few added tags.</p>
+          <code>< table >
+              < tr >
+                < th >< /th >
+                < th >< /th >
+              < /tr >
+              < tr >
+                < td >< /td >
+                < td >< /td >
+              < /tr >
+            < /table >
+          </code>
+          <p class="desc-text">This may look confusing and slightly menacing, but that's only because indents would make it more concise. The table element has both an opening and closing tag. The <span class="bold">tr</span> or <em>table row</em> tag creates a new row in the table. These are the horizontal components, and determine the height of a table. The <span class="bold">th</span> or <em>table header</em> tag creates a table header similar to a normal header. It defaults to bold text and is center aligned. The <span class="bold">td</span> or <em>table data</em> tag add table data, which is the actual text or whatever data you wish to represent. It defaults to normal text and is left aligned. Adding a table header or table data element within a row will increase the number of columns.</p>
+          <p class="desc-text">Similar to images, tables can have custom width and height for their cells, but not for the entire table. That is determined based on the number of rows and columns, and the total height and width of each cell combined.</p>
+          <p class="desc-text">Tables can also have a custom border by adding the <span class="bold">border</span> attribute within the opening tag. This attribute can contain a number of </p>
+          <code>< table border="2px">
+          < /table >
+        </code>
+        <p class="desc-text">Something that is important to remember is:</p>
+        <ul>
+          <li>The greatest height of any single cell within an entire row will determine the height of all cells within that row</li>
+          <li>The greatest width of any single cell withing an entire column will determine the width of all cells withing that column</li>
+          <li>Each row and column can have their own height and width respectively, but those values are determined by the above conditions</li>
+        </ul>
+        </section>
+        <section id="links_and_iframes" class="main-section">
+          <header>Links and iFrames</header>
+          <p class="desc-text">The final important part of basic HTML elements includes:</p>
+          <ul>
+            <li>Links and</li>
+            <li>iFrames</li>
+          </ul>
+          <p class="desc-text">A <span class="bold">link</span> is very well known. It's is how you got to this website.</p>
+          <code>< a href="" target="" >< /a ></code>
+          <p class="desc-text">The basic syntax includes an opening and closing tag, where the <em>a</em> represents the word <span class="bold">anchor</span>. A link in a website can either link to another website, or a another element/section within the same document/website. That is how the navigation links on the left are created, although that is an oversimplification.</p>
+          <p class="desc-text">The <span class="bold">target=""</span> attribute is what tells the anchor where and how to open. The default behavior of a link is to open and replace the current website. This is normal for all Google links for example. When you click on one, the same page you were viewing is now changed to the website link you clicked on. However, by changing the value of the attribute to <span class="bold">_blank</span>, the website will open in a new tab/window, keeping the original page you were on open. It looks like this:</p>
+          <code>< a href="" target="_blank" >< /a ></code>
+          <p class="desc-text">The space between the tags is how you make the website display. If left blank, there will be nothing to show. By adding text between the opening and closing tags, the link will now be "hyperlinked" to the text. This creates default formatting of a blue color and underline, and when hovered over or clicked, changes color. To see this in action, look at the references at the bottom of the page!</p>
+          <p class="desc-text">The final element we will discuss is the iFrame element.</p>
+          <code>< iframe src="" frameborder="0" >< /iframe ></code>
+          <p class="desc-text">Similar to an image, an iFrame needs a source. This is normally a video from somewhere like YouTube. There are opening and closing tags, and entering something inside them isn't necessary as it doesn't really do anything. When adding an iFrame from YouTube to your HTML, you simply need to copy the prepared code that is already given, making it much easier to use.</p>
+          <p class="desc-text">Here is a simple example of an iFrame or <em>embedded video</em>, which you can watch to gain a bit of extra information regarding iFrames.</p>
+          <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/Ki_0iES2cGI?si=CjkH5GMBCzflpUVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="references" class="main-section">
+          <header>References</header>
+          <p class="desc-text"></p>
+          <ul>
+            <li><a class="ref-link" href="https://www.browserstack.com/guide/top-html5-features" target="_blank">https://www.browserstack.com/guide/top-html5-features</a></li>
+            <li><a class="ref-link" href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/" target="_blank">https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/</a></li>
+            <li><a class="ref-link" href="https://www.youtube.com/watch?v=Ki_0iES2cGI" target="_blank">https://www.youtube.com/watch?v=Ki_0iES2cGI</a></li>
+            <li>Much of the basic information and examples were taken from this <a class="ref-link" href="https://www.amazon.com/Confident-Coding-Write-Futureproof-Career/dp/1789663083" target="_blank">book</a>. Highly recommend!</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
